@@ -1,27 +1,25 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-
 body {
-    /* Cambie el "white" por la imagen de la serie */
-    background-image: url('https://images2.alphacoders.com/605/605963.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* Le agregamos !important al final para obligar al navegador a usar nuestra imagen sobre cualquier estilo por defecto */
+    background-image: url('https://images2.alphacoders.com/605/605963.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
 }
 
-/* Añadi esto para que la tarjeta del juego sea semitransparente sobre el fondo */
+/* Forzamos a que la tarjeta aplique su estilo semitransparente */
 .game-card {
-    background-color: rgba(255, 255, 255, 0.94);
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.94) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
 }
-
 
 #botones .btn {
     transition: transform 0.2s ease;
 }
 
 #botones .btn:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
 }
