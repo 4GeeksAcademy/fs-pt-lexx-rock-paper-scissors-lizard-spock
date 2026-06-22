@@ -1,50 +1,50 @@
-# Piedra, Papel, Tijera, Lagarto, Spock (versión consola)
+# Piedra, Papel, Tijera, Lagarto, Spock (version web)
 
-## 🎯 Descripción del ejercicio
+## Descripcion del proyecto
 
-El objetivo de este proyecto es crear un programa en JavaScript que simule el clásico juego de **Piedra, Papel, Tijera, Lagarto, Spock**. El juego se ejecuta en la consola y no requiere manipulación del DOM.
+Este proyecto implementa en el navegador el juego **Piedra, Papel, Tijera, Lagarto, Spock** usando HTML, CSS y JavaScript.
 
-El programa debe:
-- Permitir que el usuario elija una opción: `rock`, `paper`, `scissors`, `lizard` o `spock`.
-- Generar una opción aleatoria para la computadora.
-- Comparar ambas opciones según las reglas del juego.
-- Mostrar el resultado en la consola usando `console.log`.
+La app permite:
+- Elegir una opcion: `rock`, `paper`, `scissors`, `lizard` o `spock`.
+- Generar una opcion aleatoria para la computadora.
+- Comparar ambas elecciones segun las reglas del juego.
+- Mostrar el resultado de cada ronda directamente en la interfaz.
 
----
+## Reglas del juego
 
-## 📌 Reglas del juego
+- **Rock** aplasta a **Scissors** y **Lizard**.
+- **Paper** cubre a **Rock** y desautoriza a **Spock**.
+- **Scissors** cortan a **Paper** y decapitan a **Lizard**.
+- **Lizard** devora a **Paper** y envenena a **Spock**.
+- **Spock** rompe a **Scissors** y vaporiza a **Rock**.
 
-- **Rock** aplasta a **Scissors** y a **Lizard**.  
-- **Paper** cubre a **Rock** y desautoriza a **Spock**.  
-- **Scissors** cortan a **Paper** y decapitan a **Lizard**.  
-- **Lizard** devora a **Paper** y envenena a **Spock**.  
-- **Spock** rompe a **Scissors** y vaporiza a **Rock**.  
+Si ambas opciones son iguales, es empate.
 
-Si ambas opciones son iguales, es un empate.
+## Estructura del proyecto
 
----
+- `src/index.html`: pagina principal e interfaz.
+- `src/app.js`: logica del juego y eventos de botones.
+- `src/style.css`: estilos visuales.
+- `vite.config.js`: configuracion de Vite con `src` como raiz.
 
-## Ejemplos de Salida
-- User chose: rock
-- Computer chose: lizard
-- You win! 🎉
+## Como ejecutar
 
-
-- User chose: paper
-- Computer chose: scissors
-- You lose 😢
-
-- User chose: spock
-- Computer chose: spock
-- It's a draw!
-
-## 🛠 Cómo ejecutar el programa
-
-El proyecto ya está configurado para funcionar en Codespaces.  
-Para ejecutar el código y ver los mensajes en consola:
+1. Instalar dependencias:
 
 ```bash
-node src/app.js
-
+npm install
 ```
-O puedes hacer npm install y despues npm run start para verlo en el browser
+
+2. Iniciar el servidor de desarrollo:
+
+```bash
+npm run start
+```
+
+3. Abrir la URL local que muestra Vite (normalmente `http://localhost:3000`).
+
+## Build de produccion
+
+```bash
+npm run build
+```

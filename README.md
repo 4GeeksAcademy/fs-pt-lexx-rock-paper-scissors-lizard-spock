@@ -1,55 +1,50 @@
-# Rock, Paper, Scissors, Lizard, Spock (console version)
+# Rock, Paper, Scissors, Lizard, Spock (web version)
 
-## 🎯 Exercise description
+## Exercise description
 
-The goal of this project is to create a JavaScript program that simulates the classic game of **Rock, Paper, Scissors, Lizard, Spock**. The game runs in the console and does not require DOM manipulation.
+This project is a browser-based implementation of **Rock, Paper, Scissors, Lizard, Spock** using HTML, CSS, and JavaScript.
 
-The program must:
-- Allow the user to choose an option: `rock`, `paper`, `scissors`, `lizard` or `spock`.
-- Generate a random option for the computer.
-- Compare both choices according to the rules of the game.
-- Display the result in the console using `console.log`.
+The app lets you:
+- Choose one option: `rock`, `paper`, `scissors`, `lizard`, or `spock`.
+- Generate a random choice for the computer.
+- Compare both choices based on the game rules.
+- See the current round result directly in the interface.
 
----
+## Game rules
 
-## 📌 Game rules
+- **Rock** crushes **Scissors** and **Lizard**.
+- **Paper** covers **Rock** and disproves **Spock**.
+- **Scissors** cut **Paper** and decapitate **Lizard**.
+- **Lizard** eats **Paper** and poisons **Spock**.
+- **Spock** smashes **Scissors** and vaporizes **Rock**.
 
-- **Rock** crushes **Scissors** and **Lizard**.  
-- **Paper** covers **Rock** and disproves **Spock**.  
-- **Scissors** cut **Paper** and decapitate **Lizard**.  
-- **Lizard** eats **Paper** and poisons **Spock**.  
-- **Spock** smashes **Scissors** and vaporizes **Rock**.  
+If both choices are equal, the round is a draw.
 
-If both choices are the same, it’s a draw.
+## Project structure
 
----
+- `src/index.html`: main page and UI layout.
+- `src/app.js`: game logic and button event handlers.
+- `src/style.css`: page and component styles.
+- `vite.config.js`: Vite configuration with `src` as root.
 
-## ✨ Example output
+## How to run
 
-- User chose: rock  
-- Computer chose: lizard  
-- You win! 🎉  
-
-- User chose: paper  
-- Computer chose: scissors  
-- You lose 😢  
-
-- User chose: spock  
-- Computer chose: spock  
-- It's a draw!
-
----
-
-## 🛠 How to run the program
-
-The project is already set up to work in Codespaces.  
-To run the code and see the console output:
+1. Install dependencies:
 
 ```bash
-node src/app.js
+npm install
 ```
 
-Or you can run 
-npm install 
-then 
-npm run start 
+2. Start the development server:
+
+```bash
+npm run start
+```
+
+3. Open the local URL shown by Vite (usually `http://localhost:3000`).
+
+## Build for production
+
+```bash
+npm run build
+```

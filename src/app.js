@@ -1,9 +1,8 @@
-import "../style.css";
+import "./style.css";
 
 // Todo tu código anterior sigue igual aquí abajo...
 const opciones = ["rock", "paper", "scissors", "lizard", "spock"];
 // ... el resto del código
-const opciones = ["rock", "paper", "scissors", "lizard", "spock"];
 
 // El mapa de reglas 
 const rules = {
